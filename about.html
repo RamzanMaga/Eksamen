@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dette er About siden">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+    <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven og lærte å lage favicon på w3schools-->
+    <title>About</title>
+  </head>
+  <body>
+    <div id="grid-container">
+      <header id="header" class="header page-header">
+        <nav class="nav flex">
+          <a href="#!" class="logo">
+            <img src="./img/logo1.png" alt="logo1">
+            <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+          </a>
+          <ul class="nav-list flex">
+            <li class="nav-item"><a class="nav-link" href="./index.html" aria-current="page">Home</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item"><a class="nav-link" href="./products.html" aria-current="page">Portfolio</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item"><a class="nav-link active" href="#!" aria-current="page">About</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item">
+              <a class="nav-link nav-link-special" href="#contacts" aria-current="page">Contact</a> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="company-desc grid">
+          <section class="company-info">
+            <p class="company-info-title">Company name</p>
+            <h1 class="company-info-subtitle">About our company</h1>
+            <p class="company-info-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nihil exercitationem fuga quaerat. Tenetur
+              voluptas expedita ullam at sint. Quos est beatae rem cum ipsa blanditiis molestiae eius, earum amet. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo perferendis consequatur voluptatum, magni
+              ab id sed nisi ratione minima. Consectetur ducimus maxime soluta totam quis quibusdam beatae ad mollitia.
+            </p>
+            <a href="#contacts" class="company-info-link">Get in touch with us</a>
+          </section>
+        </section>
+        <section id="services" class="services">
+          <h1>Our services</h1>
+          <section class="card-wrapper flex">
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/people.png"
+                alt="people"
+              /><!--Bildet er fra https://www.flaticon.com/free-icon/group-users_4121044?term=community&page=1&position=9&origin=search&related_id=4121044-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/cloud-computing.png"
+                alt="cloud-computing"
+              /><!--Bildet er fra https://stock.adobe.com/images/id/586796799?k=upload+on+cloud+icon&clickref=1100lxXsQP6B&mv=affiliate&mv2=Freepik&as_camptype=&as_channel=affiliate&as_source=partnerize&as_campaign=Flaticon&as_content=api&as_audience=404&sdid=6WTV6YJ5&asset_id=586796799-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/code.png"
+                alt="code"
+              /><!--Bildet er fra https://icons8.com/icon/11260/source-code-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/wifi.png"
+                alt="wifi"
+              /><!--Bildet er fra https://www.flaticon.com/free-icon/wifi_93158?term=wifi&page=1&position=7&origin=search&related_id=93158-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+          </section>
+        </section>
+        <section class="clients">
+          <h2>Some of our clients</h2>
+          <ul class="clients-list flex">
+            <li class="clients-item">
+              <a href="#!" class="clients-link">
+                <img src="./img/logo1.png" alt="logo1">
+                <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#!" class="clients-link">
+                <img src="./img/logo2.png" alt="logo2">
+                <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#!" class="clients-link">
+                <img src="./img/logo3.png" alt="logo3">
+                <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="contacts" class="contacts">
+          <h2 class="section-title">Contact Us</h2>
+          <section class="contacts-wrapper grid">
+            <form action="#" class="contacts-form">
+              <h3 class="contacts-subtitle">Send us message</h3>
+
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="text" id="name" placeholder="Ola Nordmann.."> <!--Skrev det som sto i videoen som viste oss hva vi skulle lage-->
+
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-input" type="text" id="subject" placeholder="Branding.."> 
+
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input" id="message" rows="10"></textarea>
+
+              <button type="submit" class="form-button">Send Message</button>
+            </form>
+            <section class="contacts-content flex">
+              <h3 class="contacts-subtitle">Contact information</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eveniet porro ab numquam fugiat, ipsam
+                libero iure nesciunt quidem culpa voluptates nobis tenetur repudiandae nam optio animi laboriosam eius
+                quod.
+              </p>
+              <ul class="contacts-list">
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link flex">
+                    <img
+                      src="./img/icons/location.png"
+                      alt="location"
+                    /><!--Bildet er fra https://www.flaticon.com/free-icon/maps-and-flags_447031?term=location&page=1&position=7&origin=search&related_id=447031-->
+                    B R A Veien 4, 1757 Halden
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link flex">
+                    <img
+                      src="./img/icons/phone-call.png"
+                      alt="phone-call"
+                    /><!--Bildet er fra https://www.flaticon.com/free-icon/phone-call_3059446?term=phone&page=1&position=5&origin=search&related_id=3059446-->
+                    69 60 80 00
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link mail-link flex">
+                    <img
+                      src="./img/icons/email.png"
+                      alt="email"
+                    /><!--Bildet er fra https://www.flaticon.com/free-icon/email_2099199?term=email&page=1&position=6&origin=search&related_id=2099199-->
+                    postenmottak@hiof.no
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+        <section class="map">
+       <!--Det med å adde map lærte jeg med å bruke Chatgpt AI-->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.9899995043957!2d11.3525547!3d59.1288772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2sH%C3%B8gskolen%20i%20%C3%98stfold!5e0!3m2!1sen!2sus!4v1636410251283!5m2!1sen!2sus"
+            class="responsive-iframe"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </main>
+      <footer class="footer">
+        <nav class="footer-nav flex">
+          <a href="./index.html" class="footer-logo">
+            <img src="./img/logo2.png" alt="logo2">
+            <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+          </a>
+          <p class="footer-copyright">CompanyrightsCompanyname 2023</p>
+          <div class="social flex">
+            <a href="#!"><img src="./img/icons/facebook.png" alt="Facebook" class="social-icon"></a
+            ><!--Redigert bildet fra https://www.flaticon.com/free-icon/facebook_747374?term=facebook&page=1&position=8&origin=search&related_id=747374-->
+            <a href=""><img src="./img/icons/instagram.png" alt="Instagram" class="social-icon"></a
+            ><!--Redigert bildet fra https://www.flaticon.com/free-icon/instagram_1384031?term=instagram&page=1&position=5&origin=search&related_id=1384031-->
+            <a href=""><img src="./img/icons/linkedin.png" alt="Linkedin" class="social-icon"></a
+            ><!--Redigert bildet fra https://www.flaticon.com/free-icon/linkedin_2582575?term=linked+in&page=1&position=26&origin=search&related_id=2582575-->
+          </div>
+        </nav>
+        <a class="back-top-btn" href="#header"> <img src="./img/icons/icons8-arrow-50.png" alt="back-top-btn"></a
+        ><!--Redigert bildet fra https://www.freepik.com/icon/up-arrow-solid-black-square-button_54866-->
+      </footer>
+    </div>
+  </body>
+</html>

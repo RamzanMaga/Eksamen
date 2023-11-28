@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dette er Index siden">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+    <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven og lærte å lage favicon på w3schools-->
+    <title>Index</title>
+  </head>
+  <body>
+    <div id="grid-container">
+      <header id="header" class="header page-header">
+        <nav class="nav flex">
+          <a href="#!" class="logo">
+            <img src="./img/logo1.png" alt="logo1"> 
+            <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+          </a>
+          <ul class="nav-list flex">
+            <li class="nav-item"><a class="nav-link active" href="#!" aria-current="page">Home</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item"><a class="nav-link" href="./products.html" aria-current="page">Portfolio</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item"><a class="nav-link" href="./about.html" aria-current="page">About</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item">
+              <a class="nav-link nav-link-special" href="./about.html#contacts" aria-current="page">Contact</a> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <!--Det med å adde video lærte jeg med å bruke Chatgpt AI-->
+        <section class="video">
+          <video autoplay muted loop id="video-bg">
+            <source src="./img/mountains.mp4" type="video/mp4">
+            <!--Videoen er fra mappen som ble gitt til oss med eksamens oppgaven-->
+          </video>
+          <section class="video-content">
+            <h1>Compeling headline</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aut ut modi nobis doloribus dolores, suscipit
+              aliquid! Aut, vitae nesciunt.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aut ut modi
+              nobis doloribus dolores, suscipit aliquid! Aut, vitae nesciunt.
+            </p>
+            <a href="#services" class="video-btn">Read more about our services</a>
+          </section>
+        </section>
+        <section class="engaging">
+          <h2>Enganging subheading. What can you help your visitors with</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum facere quidem et in ratione at, soluta iusto
+            nulla pariatur, nam voluptatem dolor praesentium, dignissimos ea? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Fuga at ab repellendus blanditiis, non quisquam quas quo? Magnam necessitatibus aut minus
+            sed harum hic debitis!
+          </p>
+        </section>
+        <section class="about flex">
+          <img src="./img/400x400.png" alt="400x400">
+          <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+          <section class="about-content">
+            <h3>About our company</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, minima exercitationem quisquam magnam
+              ratione blanditiis delectus consequuntur ipsa aspernatur provident! Eum obcaecati maiores laborum!
+              Similique obcaecati odit reiciendis officia asperiores?
+            </p>
+            <a href="./about.html" class="about-content-btn">Read more about us</a>
+          </section>
+        </section>
+        <section id="services" class="services">
+          <h2>Our services</h2>
+          <section class="card-wrapper flex">
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/people.png"
+                alt="people"
+              /><!--Bildet er fra https://www.flaticon.com/free-icon/group-users_4121044?term=community&page=1&position=9&origin=search&related_id=4121044-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/cloud-computing.png"
+                alt="cloud-computing"
+              /><!--Bildet er fra https://stock.adobe.com/images/id/586796799?k=upload+on+cloud+icon&clickref=1100lxXsQP6B&mv=affiliate&mv2=Freepik&as_camptype=&as_channel=affiliate&as_source=partnerize&as_campaign=Flaticon&as_content=api&as_audience=404&sdid=6WTV6YJ5&asset_id=586796799-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/code.png"
+                alt="code"
+              /><!--Bildet er fra https://icons8.com/icon/11260/source-code-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+            <article class="card flex">
+              <img
+                class="card-img"
+                src="./img/icons/wifi.png"
+                alt="wifi"
+              /><!--Bildet er fra https://www.flaticon.com/free-icon/wifi_93158?term=wifi&page=1&position=7&origin=search&related_id=93158-->
+              <h3 class="card-title">Branding</h3>
+              <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </article>
+          </section>
+        </section>
+        <section class="news">
+          <h2>Sign up for our newsletter</h2>
+          <form action="#" class="newsletter">
+            <section class="form-group flex">
+              <input class="newsletter-input" type="email" placeholder="Nora@epost.no"> <!--Skrev det som sto i videoen som viste oss hva vi skulle lage-->
+              <button class="form-button" type="submit">Sign me up!</button>
+            </section>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <nav class="footer-nav flex">
+          <a href="./index.html" class="footer-logo">  
+            <img src="./img/logo2.png" alt="logo2">
+            <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+          </a>
+          <p class="footer-copyright">CompanyrightsCompanyname 2023</p>
+          <div class="social flex">
+            <a href="#!"><img src="./img/icons/facebook.png" alt="Facebook" class="social-icon"></a
+            ><!--Bildet er henta fra https://www.flaticon.com/free-icon/facebook_747374?term=facebook&page=1&position=8&origin=search&related_id=747374-->
+            <a href=""><img src="./img/icons/instagram.png" alt="Instagram" class="social-icon"></a
+            ><!--Bildet er henta fra https://www.flaticon.com/free-icon/instagram_1384031?term=instagram&page=1&position=5&origin=search&related_id=1384031-->
+            <a href=""><img src="./img/icons/linkedin.png" alt="Linkedin" class="social-icon"></a
+            ><!--Bildet er henta fra https://www.flaticon.com/free-icon/linkedin_2582575?term=linked+in&page=1&position=26&origin=search&related_id=2582575-->
+          </div>
+        </nav>
+        <a class="back-top-btn" href="#header"> <img src="./img/icons/icons8-arrow-50.png" alt="back-top-btn"></a
+        ><!--Redigert bildet fra https://www.freepik.com/icon/up-arrow-solid-black-square-button_54866-->
+      </footer>
+    </div>
+  </body>
+</html>

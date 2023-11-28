@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dette er Products siden" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+    <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven og lærte å lage favicon på w3schools-->
+    <title>Products</title>
+  </head>
+  <body>
+    <div id="grid-container">
+      <header id="header" class="header page-header">
+        <nav class="nav flex">
+          <a href="#!" class="logo">
+            <img src="./img/logo1.png" alt="logo1" />  
+            <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+          </a>
+          <ul class="nav-list flex">
+            <li class="nav-item"><a class="nav-link" href="./index.html" aria-current="page">Home</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item"><a class="nav-link active" href="#!" aria-current="page">Portfolio</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item"><a class="nav-link" href="./about.html" aria-current="page">About</a></li> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            <li class="nav-item">
+              <a class="nav-link nav-link-special" href="./about.html#contacts" aria-current="page">Contact</a> <!--Det med aria-current lærte jeg på w3schools, men prøvde å sette noe annet enn page så ble det error på validator-->
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="portfolio-header">
+          <h1>Portfolio</h1>
+        </section>
+        <section class="explore">
+          <h2 class="underline-title">Explore previous jobs</h2>
+          <ul class="explore-list flex">
+            <li class="explore-list-item">
+              <a class="explore-list-link" href="#branding">Branding</a>
+            </li>
+            <li class="explore-list-item">
+              <a class="explore-list-link" href="#design">Design</a>
+            </li>
+            <li class="explore-list-item">
+              <a class="explore-list-link" href="#development">Development</a>
+            </li>
+          </ul>
+        </section>
+        <section id="branding" class="branding">
+          <h2 class="underline-title">Branding</h2>
+          <section class="portfolio-cards-wrapper">
+            <a href="#" class="portfolio-card">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+            <a href="#" class="portfolio-card">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+            <a href="#" class="portfolio-card">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+          </section>
+          <section class="portfolio-cards-wrapper-big">
+            <a href="#" class="portfolio-card portfolio-card-big">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+          </section>
+        </section>
+        <section id="design" class="design">
+          <h2 class="underline-title">Design</h2>
+          <section class="portfolio-cards-wrapper">
+            <a href="#" class="portfolio-card">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+            <a href="#" class="portfolio-card">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+            <a href="#" class="portfolio-card">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+          </section>
+        </section>
+        <section id="development" class="development">
+          <h2 class="underline-title">Development</h2>
+          <section class="portfolio-cards-wrapper-big">
+            <a href="#" class="portfolio-card portfolio-card-big">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span> </a
+            ><a href="#" class="portfolio-card portfolio-card-big">
+              <img src="./img/400x400.png" alt="400x400" />
+              <!--Bildet er fra https://dummyimage.com/400x400/dddddd/999999-->
+              <span>Et harum quidem</span>
+            </a>
+          </section>
+        </section>
+      </main>
+      <footer class="footer">
+        <nav class="footer-nav flex">
+          <a href="./index.html" class="footer-logo">
+            <img src="./img/logo2.png" alt="logo2" /> 
+            <!--Bildet er fra mappen som ble gitt til oss med eksamens oppgaven-->
+          </a>
+          <p class="footer-copyright">CompanyrightsCompanyname 2023</p>
+          <div class="social flex">
+            <a href="#!"><img src="./img/icons/facebook.png" alt="Facebook" class="social-icon" /></a
+            ><!--Redigert bildet fra https://www.flaticon.com/free-icon/facebook_747374?term=facebook&page=1&position=8&origin=search&related_id=747374-->
+            <a href=""><img src="./img/icons/instagram.png" alt="Instagram" class="social-icon" /></a
+            ><!--Redigert bildet fra https://www.flaticon.com/free-icon/instagram_1384031?term=instagram&page=1&position=5&origin=search&related_id=1384031-->
+            <a href=""><img src="./img/icons/linkedin.png" alt="Linkedin" class="social-icon" /></a
+            ><!--Redigert bildet fra https://www.flaticon.com/free-icon/linkedin_2582575?term=linked+in&page=1&position=26&origin=search&related_id=2582575-->
+          </div>
+        </nav>
+        <a class="back-top-btn" href="#header"> <img src="./img/icons/icons8-arrow-50.png" alt="back-top-btn" /> </a
+        ><!--Redigert bildet fra https://www.freepik.com/icon/up-arrow-solid-black-square-button_54866-->
+      </footer>
+    </div>
+  </body>
+</html>
